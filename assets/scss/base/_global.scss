@@ -11,8 +11,21 @@ main {
 
 .container {
     width: 100%;
+    width: min(1120px, 100% - 2rem);
     max-width: var(--container);
 
     margin: 0 auto;
     padding: 0 1.5rem;
+
+    margin-inline: auto;
+}
+
+// * {
+//     outline: 1px solid red;
+// }
+
+@media (max-width: 768px) {
+    section {
+        padding: 4rem 0 !important;
+    }
 }
