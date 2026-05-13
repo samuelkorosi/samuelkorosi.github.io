@@ -1,0 +1,18 @@
+.card-hover {
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+
+    &:hover {
+        border-color: rgba(37, 99, 235, 0.2);
+        transform: translateY(-2px);
+    }
+}
+
+.card-hover--bg:hover {
+    transition: background 0.2s ease;
+
+    background: rgba(37, 99, 235, 0.03);
+
+}

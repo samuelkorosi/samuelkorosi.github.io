@@ -2,6 +2,7 @@
 @use './base/variables';
 @use './base/global';
 @use './base/typography';
+@use './base/interactions';
 
 @use './layout/header';
 @use './layout/footer';
@@ -20,5 +21,7 @@
 
 @use './components/skill-card';
 @use './sections/skills';
+
+@use './sections/education';
 
 @use './sections/contact';
