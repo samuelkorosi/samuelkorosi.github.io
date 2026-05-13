@@ -1,0 +1,28 @@
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    padding: 2rem;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    background: var(--surface);
+}
+
+.skill-card h3 {
+    font-size: 1.2rem;
+
+    letter-spacing: -0.02em;
+}
+
+.skill-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.skill-card li {
+    color: var(--text-secondary);
+}

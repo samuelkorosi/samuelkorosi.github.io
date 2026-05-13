@@ -1,0 +1,34 @@
+.contact {
+    padding: 6rem 0;
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    max-width: 720px;
+}
+
+.contact__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact__links a {
+    padding: 0.9rem 1.25rem;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.contact__links a:hover {
+    border-color: var(--primary);
+
+    transform: translateY(-2px);
+}

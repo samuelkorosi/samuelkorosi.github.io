@@ -1,0 +1,15 @@
+.about {
+    padding: 6rem 0;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    max-width: 800px;
+}
+
+.about__content p {
+    font-size: 1.05rem;
+}
