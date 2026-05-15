@@ -171,6 +171,9 @@ p {
 .footer p.footer-mobile {
   display: none;
 }
+.footer p.footer-desk {
+  display: block;
+}
 
 .footer .logo {
   width: 80px;
