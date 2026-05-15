@@ -189,7 +189,7 @@ p {
 }
 
 @media (max-width: 768px) {
-  .footer .footer-desk {
+  .footer p.footer-desk {
     display: none;
   }
   .footer p.footer-mobile {
