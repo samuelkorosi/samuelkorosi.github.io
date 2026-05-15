@@ -60,7 +60,6 @@ section {
 }
 
 .container {
-  width: 100%;
   width: min(1120px, 100% - 2rem);
   max-width: var(--container);
   margin: 0 auto;
@@ -71,6 +70,9 @@ section {
 @media (max-width: 768px) {
   section {
     padding: 4rem 0 !important;
+  }
+  .container {
+    width: calc(100% - 1rem);
   }
 }
 h1,
@@ -143,6 +145,9 @@ p {
 }
 
 @media (max-width: 768px) {
+  .header .container {
+    height: 60px;
+  }
   .logo {
     font-size: 1rem;
   }
@@ -160,8 +165,11 @@ p {
 
 .footer p {
   color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-align: center;
+}
+.footer p.footer-mobile {
+  display: none;
 }
 
 .footer .logo {
@@ -177,6 +185,14 @@ p {
   color: var(--primary);
 }
 
+@media (max-width: 768px) {
+  .footer .footer-desk {
+    display: none;
+  }
+  .footer p.footer-mobile {
+    display: block;
+  }
+}
 .hero {
   padding: 8rem 0;
 }

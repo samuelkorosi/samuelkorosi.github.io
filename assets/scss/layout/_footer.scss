@@ -7,8 +7,12 @@
 .footer p {
     color: var(--text-secondary);
 
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-align: center;
+
+    &.footer-mobile {
+        display: none;
+    }
 }
 
 .footer {
@@ -25,5 +29,17 @@
 
     .logo-sigla {
         color: var(--primary);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        .footer-desk {
+            display: none;
+        }
+
+        p.footer-mobile {
+            display: block;
+        }
     }
 }
