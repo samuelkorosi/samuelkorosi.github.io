@@ -335,6 +335,60 @@ p {
   gap: 2rem;
 }
 
+.experience-details summary {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--primary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  list-style: none;
+}
+.experience-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.experience-details__content {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: rgba(37, 99, 235, 0.02);
+}
+
+.experience-details__label {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.experience-details ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.experience-details li {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  padding-left: 1.25rem;
+  position: relative;
+}
+.experience-details li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
 .case-card {
   padding: 2rem;
   border: 1px solid var(--border);
