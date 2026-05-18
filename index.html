@@ -26,17 +26,20 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/main.css">
+
+    <link rel=”icon” type=”image/svg” href=”/LogoSK.svg”>
 </head>
 
 <body>
     <header class="header">
         <div class="container">
 
-            <a href="/" class="logo">
-                Samuel Korosi
+            <a href="/" class="navbar-brand">
+                <span class="navbar-brand__initials">SK</span>
+                <span class="navbar-brand__name">Samuel Korosi</span>
             </a>
 
-            <nav class="nav">
+            <nav class="nav" id="mobile-menu">
                 <ul>
                     <li>
                         <a href="#about">Sobre</a>
@@ -58,6 +61,12 @@
                     </li>
                 </ul>
             </nav>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
         </div>
     </header>
