@@ -80,7 +80,7 @@
 
     border-radius: 999px;
 
-    background: rgba(37, 99, 235, 0.08);
+    background: rgba(var(--primary-rgb), 0.08);
 
     color: var(--primary);
 
@@ -93,6 +93,10 @@
     .certification-item {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .degree-card {
+        padding: 1.5rem;
     }
 
 }

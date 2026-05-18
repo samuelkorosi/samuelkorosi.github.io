@@ -26,3 +26,9 @@
 .skill-card li {
     color: var(--text-secondary);
 }
+
+@media (max-width: 768px) {
+    .skill-card {
+        padding: 1.5rem;
+    }
+}

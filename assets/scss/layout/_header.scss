@@ -5,9 +5,9 @@
 
     backdrop-filter: blur(12px);
 
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(var(--surface-rgb), 0.75);
 
-    border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+    border-bottom: 1px solid rgba(var(--border-blue-rgb), 0.06);
 }
 
 .header .container {
