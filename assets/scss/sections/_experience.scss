@@ -21,6 +21,20 @@
         &::-webkit-details-marker {
             display: none;
         }
+
+        .summary-close {
+            display: none;
+        }
+    }
+
+    &[open] {
+        .summary-open {
+            display: none;
+        }
+
+        .summary-close {
+            display: inline;
+        }
     }
 }
 

@@ -452,6 +452,15 @@ p {
 .experience-details summary::-webkit-details-marker {
   display: none;
 }
+.experience-details summary .summary-close {
+  display: none;
+}
+.experience-details[open] .summary-open {
+  display: none;
+}
+.experience-details[open] .summary-close {
+  display: inline;
+}
 
 .experience-details__content {
   margin-top: 1rem;
