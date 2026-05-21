@@ -1,18 +1,32 @@
 .card-hover {
     transition:
-        border-color 0.2s ease,
-        background 0.2s ease,
-        transform 0.2s ease;
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        background 0.25s ease;
 
     &:hover {
         border-color: var(--primary);
+    }
+}
+
+.card-hover__translate {
+    transition:
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        background 0.25s ease;
+
+    &:hover {
         transform: translateY(-2px);
     }
 }
 
-.card-hover--bg:hover {
-    transition: background 0.2s ease;
+.card-hover__bg {
+    transition:
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        background 0.25s ease;
 
-    background: rgba(var(--primary-rgb), 0.03);
-
+    &:hover {
+        background: rgba(var(--primary-rgb), 0.03);
+    }
 }
