@@ -97,6 +97,12 @@
     width: 100%;
 }
 
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
 .nav-toggle {
     display: none;
 
@@ -154,6 +160,33 @@
             transform: rotate(-45deg);
         }
     }
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    padding: 0;
+    line-height: 1;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    background: var(--surface);
+    color: var(--text);
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.theme-toggle:hover {
+    background: rgba(var(--primary-rgb), 0.08);
+    border-color: var(--primary);
 }
 
 @media (max-width: 768px) {

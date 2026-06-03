@@ -49,6 +49,19 @@ a {
   --radius: 16px;
 }
 
+[data-theme=dark] {
+  --bg: #111827;
+  --surface: #1e293b;
+  --surface-rgb: 30, 41, 59;
+  --text: #f8fafc;
+  --text-secondary: #d1d5db;
+  --primary: #60a5fa;
+  --primary-rgb: 96, 165, 250;
+  --border: #334155;
+  --border-blue: #e2e8f0;
+  --border-blue-rgb: 226, 232, 240;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
@@ -189,6 +202,12 @@ p {
   width: 100%;
 }
 
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
 .nav-toggle {
   display: none;
   width: 24px;
@@ -226,6 +245,27 @@ p {
 .nav-toggle.active span:nth-child(3) {
   top: 8px;
   transform: rotate(-45deg);
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  line-height: 1;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(var(--primary-rgb), 0.08);
+  border-color: var(--primary);
 }
 
 @media (max-width: 768px) {
@@ -526,11 +566,11 @@ p {
 
 .case-card__tag {
   width: fit-content;
-  padding: 0.35rem 0.75rem;
+  padding: 0.5rem 0.9rem;
   border-radius: 999px;
   background: rgba(var(--primary-rgb), 0.08);
   color: var(--primary);
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   font-weight: 600;
 }
 
